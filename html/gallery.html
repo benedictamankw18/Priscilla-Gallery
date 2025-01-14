@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Priscilla Gallery - Gallery</title>
+</head>
+<body>
+    <header id="header">
+        <img src="../image/logo.png" title="Priscilla Gallery Logo">
+        <h1 class="title">Priscilla <span>Gallery</span></h1>
+        <marquee>
+            believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it
+            believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it
+            believe it believe it believe it believe it
+        </marquee>
+        <span class="searchNav">
+            <input type="text" placeholder="Search..." class="searchbar" id="HeadSearchBar" oninput="SearchChangeText()">
+            <i class="fa fa-close hamburgerClose" id="NavClose" onclick="navShow()" style="display: none;"> </i>
+            <i class="fa fa-navicon hamburger" id="NavOpen" onclick="navShow()"> </i>
+        </span>
+        <nav id="NavHead" style="display: none;">
+            <ul>
+                <li><i class="fa fa-home"></i><a href="../index.html">Home </a></li>
+                <li><i class="fa fa-shopping-bag"></i><a href="./gallery.html">Gallery</a></li>
+                <li><i class="fa fa-user"></i><a href=""> Profile</a></li>
+                <li><i class="fa fa-gear"></i><a href="">Settings</a></li>
+                <li><i class="fa fa-sign-in"></i><a href="./login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h2>Gallery</h2>
+        <div class="gallery-controls">
+            <input type="file" id="image-input" accept="image/*">
+            <button id="add-image-btn">Add Image</button>
+        </div>
+        <div class="gallery-container" id="gallery-container">
+            <div class="gallery-item">
+                <img src="../image/gallery/1.jpg" alt="Gallery Image 1">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/2.jpg" alt="Gallery Image 2">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/3.jpg" alt="Gallery Image 3">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/4.jpg" alt="Gallery Image 4">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/5.jpg" alt="Gallery Image 5">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/6.jpg" alt="Gallery Image 6">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/7.jpg" alt="Gallery Image 7">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/8.jpg" alt="Gallery Image 8">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/9.jpg" alt="Gallery Image 9">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+            <div class="gallery-item">
+                <img src="../image/gallery/10.jpg" alt="Gallery Image 10">
+                <button class="remove-image-btn">Remove</button>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Priscilla Gallery is a place where art meets passion. We showcase a variety of artworks from talented artists around the world.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="./login.html">Log In</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@priscillagallery.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Priscilla Gallery | Designed by Priscilla
+        </div>
+    </footer>
+    <script src="../js/gallery.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/todo.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Priscilla Gallery - To-Do List</title>
+</head>
+<body>
+
+    <header id="header">
+        <img src="../image/logo.png" title="Priscilla Gallery Logo">
+        <h1 class="title">To-Do List </h1>
+        <marquee>
+            believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it
+            believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it
+            believe it believe it believe it believe it
+        </marquee>
+        <span class="searchNav">
+            <input type="text" placeholder="Search..." class="searchbar" id="HeadSearchBar" oninput="SearchChangeText()">
+            <i class="fa fa-close hamburgerClose" id="NavClose" onclick="navShow()" style="display: none;"> </i>
+            <i class="fa fa-navicon hamburger" id="NavOpen" onclick="navShow()"> </i>
+        </span>
+        <nav id="NavHead" style="display: none;">
+            <ul>
+                <li><i class="fa fa-home"></i><a href="../index.html">Home </a></li>
+                <li><i class="fa fa-shopping-bag"></i><a href="./gallery.html">Gallery</a></li>
+                <li><i class="fa fa-user"></i><a href=""> Profile</a></li>
+                <li><i class="fa fa-gear"></i><a href="">Settings</a></li>
+                <li><i class="fa fa-sign-in"></i><a href="../html/login.html">Log In</a></li>
+            </ul>
+        </nav>
+        <!-- <marquee class="marquee">Mark campaign</marquee> -->
+    </header>
+
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-btn">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+        <button id="back-btn" onclick="window.history.back()">Back</button>
+        <button id="download-btn">Download as PDF</button>
+        <button id="save-txt-btn">Save as TXT</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="../js/todo.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

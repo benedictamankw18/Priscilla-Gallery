@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Marketing</title>
+</head>
+<style>
+    :root{
+        --mainColor: #d2d0d0;
+        --secondaryColor: #6f4f4f;
+        --thirdcolor: #caef8a;
+        --HeadFont: 2em;
+        --SubHeadFont: 1em;
+        --MainFont: 15px;
+    }
+
+    body {
+        background-color: var(--mainColor);
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header{
+        position: absolute;
+        width: 98%;
+        margin-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: var(--thirdcolor);
+    }
+
+    #header img {
+        border: 1px solid var(--mainColor);
+        background-color: #6f4f4f;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        padding-top: 10px;
+    }
+    .title {
+        font-size: var(--HeadFont);
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .hamburger, .hamburgerClose {
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0px 5px 0px;
+        padding: 5px;
+    }
+
+    #NavHead{
+        z-index: 20;
+        background-color: var(--mainColor);
+        width: 150px;
+        padding: 0 px;
+        display: flex;
+        border: 1px solid #6f4f4f;
+        border-radius: 10px;
+        position: absolute;
+        float: inline-end;
+        right: 20px;
+        top: 60px;
+        
+    }
+    ul {
+        list-style-type: none;
+        line-height: 25px;
+    }
+    #NavHead ul li a {
+        color: #000;
+        text-decoration: none !important;
+        padding-left: 10px !important;
+    }
+
+    #NavHead ul li a:hover {
+        color: #00f;
+        font-size: 15px;
+    }
+
+    #NavHead ul li a::selection{
+        color: #00f;
+        font-size: 15px;
+        background-color: transparent transparent transparent;
+    }
+    .searchNav{
+        top: -60px;
+        float: right;
+        position: relative;
+        right: 30px;
+        display: flex;
+    }
+
+    .searchbar{
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+        background-color: #d4d8cc;
+        border: 0.01px solid var(--thirdcolor);
+        border-radius: 20px;
+        padding: 0px 10px;
+    }
+
+    .searchbar:active, .searchbar:hover, .searchbar:focus{
+        width: 200px;
+    }
+</style>
+<body>
+    <header id="header">
+        <img src="./images/logo.png" title="Marketing Logo">
+        <h1 class="title">Marketing</h1>
+        <span class="searchNav">
+        <input type="text" placeholder="Search..." class="searchbar" id="HeadSearchBar"  oninput="SearchChangeText()">
+        <i class="fa fa-close hamburgerClose" id="NavClose" onclick="navShow()" style="display: none;"> </i>
+        <i class="fa fa-navicon hamburger" id="NavOpen" onclick="navShow()"> </i>
+        </span>
+        <nav id="NavHead" style="display: none;">
+            <ul>
+               <li><i class="fa fa-home"></i><a href="" >Home </a></li>
+               <li><i class="fa fa-shopping-bag"></i><a href=""> Shops</a></li>
+               <li><i class="fa fa-product-hunt"></i><a href=""> Products</a></li>
+               <li><i class="fa fa-shopping-cart"></i><a href="">Cart</a></li>
+               <li><i class="fa fa-first-order"></i><a href="">Orders</a></li>
+            </ul>
+        </nav>
+        <marquee class="marquee">Mark campaign</marquee>
+    </header>
+
+    <main id="main">
+
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+</body>
+ <script>
+    let switchNav = true;
+    let hamburger = document.getElementById("NavOpen");
+    let hamburgerClose = document.getElementById("NavClose");
+    let NavHead = document.getElementById("NavHead");
+    let HeadSearchBar = document.getElementById("HeadSearchBar");
+
+    function navShow() {
+        if(switchNav) {
+            hamburger.style = "display: none;";
+            hamburgerClose.style = "display: block;";
+            NavHead.style = "display: block;";
+            
+            switchNav = false;
+        }else {
+            hamburger.style = "display: block;";
+            hamburgerClose.style = "display: none;";
+            NavHead.style = "display: none;";
+            switchNav = true;
+        }
+    } 
+
+    function SearchChangeText(){
+        if(HeadSearchBar.value.length > 0){
+            HeadSearchBar.style.width = "200px";
+        }else{
+            HeadSearchBar.style.width = "100px";
+        }
+    }
+
+    
+
+ </script>
+</html>

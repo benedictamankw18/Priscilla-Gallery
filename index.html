@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  
+    <title>Priscilla Gallery</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <header id="header">
+        <img src="./image/logo.png" title="Priscilla Gallery Logo">
+        <h1 class="title">Priscilla <span>Gallery</span> </h1>
+        <marquee> 
+            believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it believe it
+        </marquee>
+        <span class="searchNav">
+        <input type="text" placeholder="Search..." class="searchbar" id="HeadSearchBar"  oninput="SearchChangeText()">
+        <i class="fa fa-close hamburgerClose" id="NavClose" onclick="navShow()" style="display: none;"> </i>
+        <i class="fa fa-navicon hamburger" id="NavOpen" onclick="navShow()"> </i>
+        </span>
+        <nav id="NavHead" style="display: none;">
+            <ul>
+               <li><i class="fa fa-home"></i><a href="./index.html">Home </a></li>
+               <li><i class="fa fa-shopping-bag"></i><a href="./html/gallery.html">Gallery</a></li>
+               <li><i class="fa fa-user"></i><a href="./html/profile.html"> Profile</a></li>
+               <li><i class="fa fa-gear"></i><a href="">Settings</a></li>
+               <li><i class="fa fa-sign-in"></i><a href="./html/login.html">Log In</a></li>
+            </ul>
+        </nav>
+        <!-- <marquee class="marquee">Mark campaign</marquee> -->
+    </header>
+
+    <main id="main">
+        <h2>Dashboard</h2>
+        <div class="spaceBtnDash"></div>
+        <div class="DashBtn">
+            <a href="./html/gallery.html"><div class="btn">Gallery</div></a>
+            <a href="./html/todo.html" ><div class="btn">ToDo List</div></a>
+            <a href="./html/profile.html"><div class="btn">Profile</div></a>
+            <a href="#"><div class="btn">Settings</div></a>
+        </div>
+
+        
+    </main>
+
+    <div class="slide">
+        <div class="inner-Slide">
+           <img src="./image/gallery/1.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/2.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/3.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/4.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/5.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/6.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/7.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/8.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/9.jpg" alt="" class="img-Slide">
+           <img src="./image/gallery/10.jpg" alt="" class="img-Slide">
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Priscilla Gallery is a place where art meets passion. We showcase a variety of artworks from talented artists around the world.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./html/gallery.html">Gallery</a></li>
+                    <li><a href="./html/profile.html">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="./html/login.html">Log In</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@priscillagallery.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Priscilla Gallery | Designed by Priscilla
+        </div>
+    </footer>
+</body>
+ <script src="./js/index.js">
+ </script>
+</html>
